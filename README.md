@@ -46,3 +46,36 @@ while(incrementor < 10){
 
 console.log(text);
 ```
+
+### Anonymous Function Express
+
+```
+var greeting = function(){
+    var name = prompt("Tell me your name","");
+    console.log(`Hello ${name}, how are you today?`);
+}
+
+greeting();
+```
+
+### Anonymous , Express and Arrow Function 
+```
+var greeting = "Hello and good morning!";
+
+function capitalizeFunction(anyString){
+    anyString = anyString.toUpperCase();
+    return anyString;
+}
+
+var capitalizeExpression = function(anyString){
+    anyString = anyString.toUpperCase();
+    return anyString;
+}
+
+var capitalizeArrow = anyString => anyString.toUpperCase();
+
+
+console.log(capitalizeFunction(greeting));
+console.log(capitalizeExpression(greeting));
+console.log(capitalizeArrow(greeting));
+```

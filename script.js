@@ -62,10 +62,42 @@ var myString = "I am really hungry for some";
 
 // doStuff();
 
-function checkNum(){
-    var userNum = prompt("Enter Whole No. ");
-    if(userNum < 10){
-        console.log(`Less then 10: ${userNum}`);
-    }
+// function checkNum(){
+//     var userNum = prompt("Enter Whole No. ");
+//     if(userNum < 10){
+//         console.log(`Less then 10: ${userNum}`);
+//     }
+// }
+
+
+// var foods = ["cheese","chicken","grapes","hamburgers"];
+
+// function randomInt(min,max){
+//     var numOfValues = max - min + 1;
+//     var randomNum = Math.random();
+//     var randomVal = randomNum * numOfValues;
+//     var roundedRandomVal = Math.floor(randomVal);
+//     var finalNum = min + roundedRandomVal;
+//     return finalNum;
+// }
+
+// console.log(foods[randomInt(0,3)]);
+
+var greeting = "Hello and good morning!";
+
+function capitalizeFunction(anyString){
+    anyString = anyString.toUpperCase();
+    return anyString;
 }
 
+var capitalizeExpression = function(anyString){
+    anyString = anyString.toUpperCase();
+    return anyString;
+}
+
+var capitalizeArrow = anyString => anyString.toUpperCase();
+
+
+console.log(capitalizeFunction(greeting));
+console.log(capitalizeExpression(greeting));
+console.log(capitalizeArrow(greeting));
